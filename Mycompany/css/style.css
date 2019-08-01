@@ -474,6 +474,56 @@ nav {
 	padding: 0px 187px;
 	margin-bottom: 117px;
 }
+/*Contact-form*/
+.contact-form {
+	max-width: 751px;
+	margin: 0 auto;
+	text-align: left;
+}
+.form-input_left {
+	float: left;
+}
+.form-input_right {
+	float: right;
+}
+.star {
+	color: red;
+}
+.form p {
+	color: #636363;
+	font-size: 14px;
+	font-weight: 400;
+
+	margin-bottom: 11px;
+}
+.form input {
+	width: 360px;
+	height: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+
+	margin-bottom: 53px;
+}
+.form textarea {
+	width: 751px;
+	height: 163px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	background-color: #ffffff;
+
+	margin-bottom: 32px;
+}
+.button {
+	float: right;
+	padding: 13px 62px;
+	cursor: pointer;
+
+	border: none;
+	background-color: #fcac45;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
 
 
 /*-- Footer --*/
