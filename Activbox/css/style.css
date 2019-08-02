@@ -183,3 +183,79 @@ body {
 
 	padding-bottom: 74px;
 }
+
+
+/*-- Project =========
+=====================*/
+.project {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-item {
+	width: 25%;
+	height: 350px;
+
+	overflow: hidden;
+
+	position: relative;
+}
+
+.project-item:hover .project__contect {
+	opacity: 1;
+}
+
+.project__img {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+
+	transform: translate3d(-16%, 0, 0);
+}
+
+.project__title {
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	margin-bottom: 13px;
+}
+
+.project__text {
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.project__contect {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	background: rgba(232, 69, 69, .6);
+
+	text-align: center;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+
+	opacity: 0;
+
+	transition: opacity .2s linear;
+}
