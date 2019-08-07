@@ -209,7 +209,7 @@ body {
 	position: relative;
 }
 
-.project-item:hover .project__contect {
+.project-item:hover .project__content {
 	opacity: 1;
 }
 
