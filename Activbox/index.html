@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>ActivBox</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:400,700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="with=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -62,23 +64,24 @@
 		</symbol>
 	</svg>
 
+<!-- ================================================================== -->
 	   <!-- Header -->
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
-				<div class="header__logo">
-					<img src="images/ActiveBox.png" alt="">
+				<div class="header__logo" id="logo" data-scroll="#logo">
+					<img class="logo__icon" src="images/ActiveBox.png" alt="">
 				</div>
 
-				<nav class="nav">
-					<a href="#" class="nav__link">Features</a>
-					<a href="#" class="nav__link">Works</a>
-					<a href="#" class="nav__link">Our Team</a>
-					<a href="#" class="nav__link">Testimonials</a>
-					<a href="#" class="nav__link">Download</a>
+				<nav class="nav" id="nav">
+					<a href="#" class="nav__link" data-scroll="#features">Features</a>
+					<a href="#" class="nav__link" data-scroll="#project">Works</a>
+					<a href="#" class="nav__link" data-scroll="#team">Our Team</a>
+					<a href="#" class="nav__link" data-scroll="#reviews">Testimonials</a>
+					<a href="#" class="nav__link" data-scroll="#download">Download</a>
 				</nav>
 				<!-- /.nav -->
-				<div class="burger">
+				<div class="burger" id="navToggle">
 					<span class="burger-item"></span>
 				</div>
 				<!-- /.burger -->
@@ -89,8 +92,10 @@
 	</header>
 	<!-- /.header -->
 
+	<!-- =========================================================== -->
+
 		<!-- Intro -->
-	<section class="intro">
+	<section class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
 				<h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -104,8 +109,10 @@
 	</section>
 	<!-- /.intro -->
 
+	<!-- ================================================================== -->
+
 		<!-- Features -->
-	<section class="features">
+	<section class="features" id="features">
 		<div class="container">
 			<div class="features-box">
 				<div class="features__item">
@@ -168,7 +175,11 @@
 	</section>
 	<!-- /.features -->
 
-	<div class="project">
+	<!-- ==================================================================== -->
+
+	<!-- Project -->
+
+	<div class="project" id="project">
 		<div class="project-item">
 			<img src="images/project/project-1.jpg" alt="" class="project__img">
 			<div class="project__content">
@@ -267,7 +278,11 @@
 	</div>
 	<!-- /.project -->
 
-	<div class="team">
+	<!-- ============================================================= -->
+
+	<!-- Team -->
+
+	<div class="team" id="team">
 		<div class="container">
 			<div class="team__inner">
 				<div class="team__item">
@@ -409,10 +424,16 @@
 	</div>
 	<!-- /.team -->
 
+<!-- ============================================================= -->
 
-	<div class="reviews">
+   <!-- Reviews -->
+
+	<div class="reviews" id="reviews">
 		<div class="container">
-			<div class="reviews-item">
+
+			<div class="reviews__slider" id ="reviewsSlider">
+				<div>
+				<div class="reviews-item">
 				<div class="reviews-photo">
 					<img class="reviews-img" src="images/reviews/reviews-img.jpg" alt="">
 				</div>
@@ -429,14 +450,44 @@
 				</div>
 				<!-- /.reviews-img -->
 			</div>
-			<!-- /.reviews-inner -->
+			<!-- /.reviews-item -->
+			</div>
+
+			<div>
+			<div class="reviews-item">
+				<div class="reviews-photo">
+					<img class="reviews-img" src="images/reviews/reviews-img2.jpg" alt="">
+				</div>
+				<!-- /.reviews-photo -->
+				<div class="reviews-content">
+					<div class="reviews__text">
+						“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+						Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...
+						”
+					</div>
+					<!-- /.reviews__text -->
+					<div class="reviews__author">
+						Susan Sims, Interaction Designer at XYZ
+					</div>
+					<!-- /.reviews__author -->
+				</div>
+				<!-- /.reviews-img -->
+			</div>
+			<!-- /.reviews-item -->
+			</div>
+			</div>
+			<!-- /.reviewsSlider -->
+			
+
+
 		</div>
 		<!-- /.container -->
 	</div>
 	<!-- /.reviews -->
 
+<!-- ========================================================= -->
 
-	<div class="download">
+	<div class="download" id="download">
 		<div class="container">
 			<h3 class="download-title">Are You Ready to Start? Download Now For Free!</h3>
 			<div class="download__text">Fusce dapibus, tellus ac cursus commodo</div>
@@ -446,6 +497,7 @@
 	</div>
 	<!-- /.download -->
 
+<!-- ========================================================= -->
 
 	<footer class="footer">
 		<div class="container">
@@ -507,6 +559,12 @@
 			<!-- /.footer__copyright -->
 	</footer>
 	<!--/. footer -->
+
+	<!-- ============================================== -->
 	
+		<!-- Java Script -->
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>

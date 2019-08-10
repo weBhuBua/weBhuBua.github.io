@@ -22,6 +22,7 @@ body {
 	padding: 0 15px;
 }
 
+/*==============================*/
 
 /*-- Header =========
 =====================*/
@@ -32,6 +33,20 @@ body {
 	top: 0;
 	left: auto;
 	z-index: 1000;
+}
+
+.header.fixed {
+	position: fixed;
+	background-color: #31344e;
+
+	height: 60px;
+}
+
+.header.fixed .header__inner {
+	padding-bottom: 15px;
+	padding-top: 15px;
+
+	border-bottom: 0;
 }
 
 .header__inner {
@@ -48,8 +63,23 @@ body {
 	padding: 38px 0;
 }
 
+.logo__icon {
+	cursor: pointer;
+}
+
+/*=================================================*/
+
 /*-- Nav =========
 =====================*/
+
+.nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
 .nav__link {
 	opacity: 0.75;
 	color: #ffffff;
@@ -450,6 +480,15 @@ body {
 	position: relative;
 }
 
+.reviews__slider {
+	height: 500px;
+	overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+	height: auto;
+}
+
 .reviews-img {
 	position: absolute;
 	top: 50%;
@@ -616,8 +655,29 @@ body {
 
 	/*Nav*/
 	.nav {
-	display: none;
-}
+		display: none;
+
+		position: absolute;
+		right: 0;
+		top: 100%;
+
+		width: 100%;
+
+		text-align: right;
+
+		flex-direction: column;
+
+		background-color: #31344e;
+	}
+
+	.nav.show {
+		display: block;
+	}
+
+	.nav__link {
+		padding: 10px 15px;
+		display: block;
+	}
 
 	/*Burger*/
 	.burger {
