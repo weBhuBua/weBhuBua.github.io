@@ -23,7 +23,6 @@ body {
 .section-img {
     padding: 200px 0;
     width: 100%;
-    /*background: url(../images/introduction/bg-img.jpg) no-repeat;*/
     background-position: bottom -200px left 0;
     background-size: cover;
     position: relative;
@@ -46,6 +45,8 @@ body {
 .section-content {
     max-width: 745px;
     margin: 0 auto;
+
+    position: relative;
 }
 
 .section__title {
@@ -64,8 +65,10 @@ body {
     height: 2px;
     background-color: #222;
     position: absolute;
-    left: 329px;
+    left: 50%;
     top: 113px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .section__text {
@@ -204,8 +207,6 @@ body {
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
-    /*margin-bottom: 100px;*/
-    /*position: relative;*/
 }
 
 .intro__title:after {
@@ -215,8 +216,10 @@ body {
     height: 2px;
     background-color: #fff;
     position: absolute;
-    left: 282px;
+    left: 50%;
     top: 113px;
+
+    transform: translate(-50%, -50%);
 }
 
 .intro__text {
@@ -259,17 +262,6 @@ body {
 .work {
     padding: 120px 0px 80px;
     text-align: center;
-}
-
-.section__title:after {
-    content: '';
-    display: block;
-    width: 86px;
-    height: 2px;
-    background-color: #222;
-    left: 50%;
-    top: 113px;
-    margin-left: -43px;
 }
 
 .nav-work {
@@ -321,7 +313,6 @@ body {
 .work-menu__link a:hover {
     font-family: 'Open Sans';
     font-weight: 700;
-    letter-spacing: -1px;
 }
 
 .work-inner {
@@ -421,10 +412,11 @@ body {
     width: 48px;
     height: 2px;
     position: absolute;
-	left: 43%;
+	left: 50%;
 	bottom: 31%;
-	margin-right: auto;
-	margin-left: auto;
+	transform: translate(-50%, -50%);
+	/*margin-right: auto;
+	margin-left: auto;*/
 
     background-color: #d87843;
 }
@@ -439,7 +431,7 @@ body {
 }
 
 .help-img {
-    background: #222222 url(../images/help/help-img.jpg) center;
+    background: #222222 url(../images/help/help-img.jpg) center no-repeat;
     position: relative;
     z-index: 1;
 }
@@ -510,8 +502,7 @@ body {
     width: 270px;
 	height: 360px;
 
-    /*position: relative;*/
-    /*overflow: hidden;*/
+    margin: 0 auto;
 }
 
 .about__photo {
@@ -630,8 +621,6 @@ body {
     width: 86px;
     height: 2px;
     background-color: #222222;
-    /*transform: translateX(20px);*/
-    transform: translateY(45px);
     margin: 0 auto;
 }
 
@@ -743,10 +732,6 @@ body {
 /*====== Contacts ===========
 =========================*/
 
-.contacts {
-    /*padding-bottom: 120px;*/
-}
-
 .contacts-inner {
     display: -webkit-flex;
     display: -moz-flex;
@@ -826,7 +811,6 @@ body {
     position: absolute;
     right: 0;
     bottom: -92px;
-    /*transform: translateX(433px);*/
 }
 
 
@@ -1128,20 +1112,12 @@ body {
         height: 100%;
     }
 
-    .work-box__text::after {
-        transform: translate(145px, 33px);
-    }
-
     .text-mobile {
     	font-size: 26px;
     }
 
     .text-google {
     	font-size: 33px;
-    }
-
-    .text-google:after {
-    	left: 46%;
     }
 
     /* --- Clients --- */
@@ -1258,6 +1234,13 @@ body {
 
 }
 
+@media (max-width: 463px) {
+
+	 /* --- Intro --- */
+	 .intro__title:after {
+	 	top: 160px;
+	 }
+}
 
 @media (max-width: 420px) {
 

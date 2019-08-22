@@ -49,18 +49,4 @@ $(function() {
 	})
 
 
-	//https://kenwheeler.github.io/slick/
-	// Choose
-	let slider = $("#chooseSlider");
-
-	slider.slick({
-	  infinite: true,
-	  slidesToShow: 3,
-	  slidesToScroll: 3,
-	  fade: false,
-	  arrows: true,
-	  dots: true
-	});
-
-
 });
