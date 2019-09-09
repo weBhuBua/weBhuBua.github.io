@@ -1,377 +1,813 @@
 *,
 *:before,
 *:after {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Yeseva One", cursive;
-    font-family: "Lato", sans-serif;
+  font-family: "Yeseva One", cursive;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 
 .header-container {
-    max-width: 1250px;
+  max-width: 1250px;
 }
 
 .block-title {
-    color: #cc9900;
-    font-family: "Yeseva One";
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 31px;
-    /* line-height: 24px; */
+  color: #cc9900;
+  font-family: "Yeseva One";
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 31px;
+  /* line-height: 24px; */
 }
 
 .block-title:after {
-    content: "";
-    display: block;
-    width: 247px;
-    height: 24px;
-    background: url(../images/section-decor.png) center no-repeat;
-    margin: 0 auto;
-    transform: translateY(15px);
+  content: "";
+  display: block;
+  width: 247px;
+  height: 24px;
+  background: url(../images/section-decor.png) center no-repeat;
+  margin: 0 auto;
+  transform: translateY(15px);
 }
 
 .block-title__light:after {
-    content: "";
-    display: block;
-    width: 247px;
-    height: 24px;
-    background: url(../images/section-decor__light.png) center no-repeat;
-    margin: 0 auto;
-    transform: translateY(15px);
+  content: "";
+  display: block;
+  width: 247px;
+  height: 24px;
+  background: url(../images/section-decor__light.png) center no-repeat;
+  margin: 0 auto;
+  transform: translateY(15px);
 }
 
 .block-title__menu {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .block-text {
-    color: #4c4c4c;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  color: #4c4c4c;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-
 
 /*=================== Header=====================
 =============================================== */
 
 .header {
-    width: 100%;
-    padding-bottom: 59px;
-    background-color: transparent;
-    position: absolute;
-    box-shadow: 10px 38px 29px inset rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding-bottom: 59px;
+  background-color: transparent;
+  position: absolute;
+  box-shadow: 10px 38px 29px inset rgba(0, 0, 0, 0.5);
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
 }
 
-.header-logo {
+/* .header-logo {
     padding-left: 30px;
-}
+} */
 
 .nav {
-    font-family: "Gentium Book Basic";
-    font-size: 21px;
-    font-weight: 700;
+  font-family: "Gentium Book Basic";
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 40px;
-    padding-top: 33px;
-    border-top: 3px solid rgba(255, 255, 255, 0);
-    transition: border 0.3s linear;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 40px;
+  padding-top: 33px;
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  transition: border 0.3s linear;
 }
 
 .nav-link:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav-link:hover {
-    border-top: 3px solid #fff;
+  border-top: 3px solid #fff;
 }
 
 .header-social {
-    font-family: "Font Awesome";
-    color: #dab33e;
-    font-size: 21px;
-    font-weight: 900;
-    margin-left: -180px;
-    padding-right: 30px;
+  font-family: "Font Awesome";
+  color: #dab33e;
+  font-size: 21px;
+  font-weight: 900;
+  margin-left: -180px;
+  padding-right: 30px;
 }
 
 .header-social__link {
-    color: #dab33e;
-    text-decoration: none;
-    margin: 0 5px;
+  color: #dab33e;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
+.menu-icon {
+  width: 50px;
+  height: 40px;
+  display: block;
+  /* margin-right: 25px; */
+  display: none;
+}
 
 /*=================== Intro =====================
 =============================================== */
 
 .intro {
-    padding: 220px 0 140px;
-    background: url(../images/intro-bg.jpg) center no-repeat;
-    background-size: cover;
+  padding: 220px 0 140px;
+  background: url(../images/intro-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .intro-inner {
-    padding: 0 70px;
+  padding: 0 70px;
 }
 
 .intro-title {
-    opacity: 0.92;
-    text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
-    color: #ffffff;
-    font-family: "Yeseva One";
-    font-size: 90px;
-    font-weight: 400;
-    margin-bottom: 111px;
+  opacity: 0.92;
+  text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+  color: #ffffff;
+  font-family: "Yeseva One";
+  font-size: 90px;
+  font-weight: 400;
+  margin-bottom: 111px;
 }
 
 .intro-title:after {
-    content: "";
-    display: block;
-    height: 43px;
-    width: 242px;
-    background: url(../images/intro-decor.png) center no-repeat;
-    transform: translateY(34px);
-    margin: 0 auto;
+  content: "";
+  display: block;
+  height: 43px;
+  width: 242px;
+  background: url(../images/intro-decor.png) center no-repeat;
+  transform: translateY(34px);
+  margin: 0 auto;
 }
 
 .button {
-    padding: 22px 52px;
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: 1px solid #000000;
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s linear;
+  padding: 22px 52px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s linear;
 }
 
 .button:hover {
-    background-color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.61);
 }
 
 .button-light {
-    border: 1px solid #ffffff;
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-left: 30px;
-    transition: background-color 0.3s linear;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-left: 30px;
+  transition: background-color 0.3s linear;
 }
 
 .button-light:hover {
-    background-color: rgba(255, 255, 255, 0.38);
+  background-color: rgba(255, 255, 255, 0.38);
 }
-
 
 /*=================== About =====================
 =============================================== */
 
 .about {
-    padding: 55px 0 30px;
-    background: url(../images/about/about-bg.jpg);
+  padding: 55px 0 30px;
+  background: url(../images/about/about-bg.jpg);
 }
 
 .about-inner {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .about-block__left {
-    display: flex;
-    flex-direction: column;
-    padding-top: 98px;
-    padding: 0 69px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-top: 98px;
+  padding: 0 69px;
 }
 
 .about-block__photo {
-    margin-top: 52px;
-    transform: translateX(34px);
+  margin-top: 52px;
+  transform: translateX(34px);
 }
 
+.about-block {
+  width: 50%;
+}
+
+.about-img {
+  width: 100%;
+}
 
 /*=================== ingredients =====================
 =============================================== */
 
 .ingredients {
-    padding: 100px 0;
-    background: url(../images/ingredients/ingredients-bg.jpg) center no-repeat;
-    background-size: cover;
+  padding: 100px 70px 100px 0px;
+  background: url(../images/ingredients/ingredients-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .ingredients-container {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 70px; */
 }
 
 .ingredients-content {
-    max-width: 570px;
-    padding: 83px 80px 75px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+  max-width: 570px;
+  padding: 83px 80px 75px;
+  /* margin-right: 70px; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .block-title__light,
 .ingredients-text {
-    color: #fff;
+  color: #fff;
 }
 
 .content__images {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .content__pic {
-    padding: 0 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  padding: 0 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
+.pic {
+  width: 100%;
+}
 
 /*=================== Menu =====================*/
 
 .menu {
-    padding: 107px 0px 28px;
-    background: url(../images/menu/pattern-menu.jpg);
+  padding: 107px 0px 28px;
+  background: url(../images/menu/pattern-menu.jpg);
 }
 
 .menu-inner {
-    display: flex;
+  display: flex;
 }
 
 .menu-block {
-    flex-direction: column;
-    width: 50%;
-    padding: 0px 70px;
-    /* text-align: left; */
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 70px;
+  /* text-align: left; */
 }
 
 .menu-block__item {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .menu-line {
-    text-align: left;
-    margin-bottom: 37px;
+  text-align: left;
+  margin-bottom: 37px;
+  position: relative;
+}
+
+.menu-line__border {
+  border: 1px solid #c89f2d;
+  padding: 7px;
+}
+
+.menu-line__border:before {
+  content: "Special";
+  display: block;
+  width: 69px;
+  height: 22px;
+  background-color: #c89f2d;
+  color: #f8fafa;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 12px;
+  position: absolute;
+  top: -23px;
+  right: -1px;
 }
 
 .menu-line__price {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #fbf7c0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2e758;
 }
 
 .menu-line__cost {
-    color: #c89f2d;
-    font-family: "Yeseva One";
-    font-size: 21px;
-    padding-bottom: 10px;
+  color: #c89f2d;
+  font-family: "Yeseva One";
+  font-size: 21px;
+  padding-bottom: 10px;
 }
 
 .menu-line__decsr {
-    color: #4c4c4c;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 12px;
+  color: #4c4c4c;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
 }
-
 
 /*=================== Reviews =====================
 =============================================== */
 
 .reviews {
-    padding: 100px 0px;
-    background: url(../images/reviews/reviews-bg.jpg) center no-repeat;
-    background-size: cover;
+  padding: 100px 0px;
+  background: url(../images/reviews/reviews-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .reviews-block {
-    margin: 0 auto;
-    max-width: 770px;
-    border: 1px solid #fbf7c0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 82px 74px 43px;
-    position: relative;
+  margin: 0 auto;
+  max-width: 770px;
+  border: 1px solid #fbf7c0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 82px 74px 43px;
+  position: relative;
 }
 
 .reviews-text {
-    color: #dde0df;
-    font-family: "Gentium Book Basic";
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 45px;
-    margin-bottom: 40px;
+  color: #dde0df;
+  font-family: "Gentium Book Basic";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 40px;
 }
 
 .reviews-text span {
-    display: block;
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 30px;
+  display: block;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
 .reviews-text:before {
-    content: "";
-    display: block;
-    width: 32px;
-    height: 25px;
-    background: url(../images/reviews/quotes.png) no-repeat;
-    position: absolute;
-    left: 35px;
-    top: 173px;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 25px;
+  background: url(../images/reviews/quotes.png) no-repeat;
+  position: absolute;
+  left: 35px;
+  top: 173px;
 }
-
 
 /*=================== Invite =====================
 =============================================== */
 
 .invite {
-    padding: 100px 0px;
-    background: url(../images/invite/invite-pattern.jpg);
+  padding: 100px 0px;
+  background: url(../images/invite/invite-pattern.jpg);
 }
 
 .invite-inner {
-    display: flex;
+  display: flex;
 }
 
 .invite-box__left {
-    width: 50%;
+  width: 50%;
 }
 
 .invite-img {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .invite-box__right {
-    width: 50%;
+  width: 50%;
+  padding: 0 80px;
+}
+
+.form {
+  text-align: left;
+  margin-top: 46px;
+}
+
+.form input {
+  /* display: inline-block; */
+  width: 190px;
+  height: 36px;
+  border: 1px solid #c89f2d;
+  background-color: transparent;
+  color: #7c7c7c;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: italic;
+  margin: 5px 20px 29px 0px;
+  padding-left: 10px;
+}
+
+.form label {
+  width: 200px;
+}
+
+.form span {
+  color: #c9a131;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form p {
+  display: inline-block;
+}
+
+.button-form {
+  display: block;
+  padding: 11px 60px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #c89f2d;
+  background-color: rgba(200, 159, 45, 0.9);
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.3s linear;
+}
+
+.button-form:hover {
+  background-color: #c89f2d;
+}
+
+/*=================== Footer =====================
+=============================================== */
+
+.footer {
+  padding: 61px 230px 72px 230px;
+  background-color: #191919;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-inner {
+  display: flex;
+}
+
+.footer-item {
+  width: 30%;
+}
+
+.footer-title {
+  color: #fefefe;
+  font-family: "Yeseva One";
+  font-size: 21px;
+  margin-bottom: 63px;
+}
+
+.footer-title:after {
+  content: "";
+  display: block;
+  width: 199px;
+  height: 19px;
+  background: url(../images/footer/footer-decor.png) no-repeat;
+  color: #fff;
+  transform: translate(0px, 21px);
+  margin: 0 auto;
+}
+
+.footer-text span {
+  font-weight: 700;
+}
+
+.hours:nth-child(2) {
+  margin-bottom: 54px;
+}
+
+.hours span {
+  font-weight: 700;
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 54px;
+}
+
+.footer i {
+  margin: 0px 4px;
+}
+
+/*=================== Media =====================
+=============================================== */
+
+
+
+@media (max-width: 1200px) {
+  /* Header */
+  .nav-link {
+    margin-left: 30px;
+  }
+
+  .header-social {
+    position: absolute;
+    top: 75px;
+    right: 35px;
+  }
+
+  .nav {
+    padding-right: 40px;
+  }
+
+  /* Invite  */
+  .invite-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .invite-box__left {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .invite-box__right {
+    width: 100%;
+    padding: 0 280px;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  /* Footer  */
+  .footer {
+    padding: 60px 170px 70px;
+  }
+  .footer-item {
+    padding: 0 15px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  /* Header */
+  .nav {
+    display: none;
+  }
+
+  .header-social {
+    top: 35px;
+    right: 75px;
+  }
+
+  .header-social__link {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  /* Intro */
+  .intro-title {
+    font-size: 80px;
+  }
+  /* About  */
+  .about-inner {
+    flex-direction: column;
+  }
+  .about-block__left {
+    width: 100%;
+    padding: 0 140px;
+    margin-bottom: 40px;
+  }
+  .about-block {
+    width: 80%;
+  }
+  /* Ingredients  */
+  .ingredients {
+    padding-right: 0;
+  }
+  .ingredients-container {
+    justify-content: center;
+  }
+  /* Menu  */
+  .menu {
+    padding: 80px 0px 20px;
+  }
+  .menu-block {
+    padding: 0px 60px;
+  }
+
+  /* Reviews  */
+  .reviews-block {
+    padding: 60px 50px 30px;
+  }
+
+  .reviews-text {
+    font-size: 23px;
+  }
+
+  .reviews-text::before {
+    top: 140px;
+  }
+
+  /* Invite  */
+  .invite {
+    padding: 80px 0;
+  }
+  .invite-box__right {
+    padding: 0 170px;
+  }
+
+  /* Footer  */
+  .footer {
+    padding: 60px 50px 60px;
+  }
+
+  .footer-item:last-child {
+    padding-right: 0;
+  }
+
+  .footer-item:first-child {
+    padding-left: 0;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+
+  .block-title {
+    font-size: 34px;
+  }
+
+  /* Intro */
+  .intro-title {
+    font-size: 60px;
+  }
+  .button {
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+  /* About  */
+  .about-block__left {
+    padding: 0 55px;
+  }
+  /* Ingredients  */
+  .ingredients {
+    padding: 70px;
+  }
+  .ingredients-content {
+    padding: 60px;
+  }
+  /* Menu  */
+  .menu-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Reviews  */
+  .reviews-block {
+    padding: 40px 50px 10px;
+    margin-bottom: 20px;
+  }
+
+  .reviews-text::before {
+    left: 20px;
+    top: 125px;
+  }
+
+   /* Invite  */
+   .invite {
+    padding: 60px 0;
+  }
+  .invite-box__right {
+    padding: 0 170px;
+  }
+
+  .form input {
+    width: 150px;
+  }
+
+  /* Footer  */
+  .footer {
+    padding: 40px 20px 40px 40px;
+  }
+
+}
+
+@media (max-width: 685px) {
+
+  /* Invite  */
+  .invite-box__right {
+    padding: 0 150px;
+  }
+
+  /* .form { 
+    padding: 0 100px 0 80px;
+  } */
+
+  .form input {
+    width: 190px;
+  }
+
+}
+
+
+@media (max-width: 540px) {
+
+  .block-title {
+    font-size: 32px;
+  }
+  
+  .header-inner {
+    padding: 0 15px;
+  }
+
+  .header-social {
+    right: 45px;
+  }
+
+  .intro {
+    padding: 180px 0 100px
+  }
+
+  .intro-title {
+    font-size: 55px;
+  }
+
+  .intro-inner {
+    padding: 0 30px;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .menu-block {
+    padding: 0 40px;
+  }
+
+  .invite-box__right {
     padding: 0 80px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hours:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .footer-adress {
+    margin-bottom: 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 45px;
+  }
+
 }
