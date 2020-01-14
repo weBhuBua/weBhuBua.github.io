@@ -1,0 +1,36 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+    box-sizing: border-box;
+}
+button {
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.out-12 {
+    width: 176px;
+    height: 167px;
+    border: 1px solid gray;
+}
+
+.block {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid gray;
+    margin-bottom: -5px;
+    padding: 0;
+}
+
+.block-dark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: rgb(36, 35, 35);
+    border: 1px solid gray;
+    margin-bottom: -5px;
+}

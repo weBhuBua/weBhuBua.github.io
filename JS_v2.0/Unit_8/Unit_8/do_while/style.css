@@ -1,0 +1,14 @@
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.task-16 {
+    padding: 5px;
+    background-color: rgb(211, 227, 230);
+}

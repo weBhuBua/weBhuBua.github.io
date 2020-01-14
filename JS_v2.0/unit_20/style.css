@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.block {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    border: 2px solid #333;
+}
+
+.active {
+    background: orange;
+}
+
+.hide {
+    display: none;
+}
+
+/*------ Clava --------  */
+
+.i-11 {
+    margin-top: 30px;
+}
+
+.clava {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    border-radius: 3px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #D3D3D3;
+}
+
+.main {
+    position: relative;
+    width: 81%;
+    margin: 2px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+
+    background: #F08080;
+
+}
+
+.line {
+    display: flex;
+    width: 100%;
+}
+
+.midle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 18%;
+    margin: 2px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 40px;
+
+    background: rgba(103, 174, 245, 0.705);
+}
+
+.pg {
+    display: flex;
+    flex-wrap: wrap;
+    height: 110px;
+}
+
+.arrows {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+}
+
+.hi {
+    position: absolute;
+    top: -64px;
+    left: 63px;
+}
+
+.key {
+    width: 59px;
+    height: 60px;
+    border: 2px solid black;
+    margin: 2px;
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 3px;
+
+    text-align: center;
+    line-height: 45px;
+
+    background: #FFF5EE;
+}
+
+.key:hover {
+    color: #fff;
+    background: #FF8C00;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pic {
+    width: 55%;
+    vertical-align: middle;
+}
+
+.backspace {
+    width: auto;
+}
+
+.tab {
+    width: 82px;
+}
+
+.caps {
+    width: auto;
+}
+
+.enter {
+    width: 60px;
+    height: 125px;
+    position: absolute;
+    right: 0;
+}
+
+.lshift {
+    width: 129px;
+}
+
+.rshift {
+    width: 139px;
+}
+
+.lctrl {
+    width: 83px;
+}
+
+.rctrl {
+    width: 86px;
+}
+
+.space {
+    width: 410px;
+}
+
+.dark {
+    background: rgb(139, 139, 139);
+}

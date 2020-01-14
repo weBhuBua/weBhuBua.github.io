@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+}
+
+.task {
+    border: 1px solid rgb(70, 45, 45);
+    padding: 5px 10px;
+    margin-bottom: 7px;
+}
+
+.task span {
+    font-weight: 700;
+}
+
+.answer {
+    font-weight: 700;
+    color: rgb(27, 20, 20);
+}

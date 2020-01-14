@@ -1,0 +1,11 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+}
+
+button {
+    padding: 3px;
+    margin-bottom: 10px;
+}
